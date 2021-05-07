@@ -1,5 +1,9 @@
+let card = document.querySelector(".card");
+let btn = document.querySelector(".btn");
 let content = document.querySelector(".content");
 let author = document.querySelector(".author");
+
+let rotate = 0;
 
 async function getData() {
   let response = await fetch('https://api.quotable.io/random');
@@ -7,7 +11,7 @@ async function getData() {
   let jsonData = await response.json();
 
   if (response.ok) {
-    let quote = jsonData
+    let quote = jsonData;
     author.textContent = quote.author;
     content.textContent = quote.content;
 
@@ -17,5 +21,9 @@ async function getData() {
   }
 }
 
+btn.addEventListener("click", () => {
+  rotate += 360;
+  card.style.transform = "rotate(" + rotate + "deg)";
+});
 
-getData()
+getData();

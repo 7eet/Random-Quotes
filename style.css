@@ -12,14 +12,15 @@ body {
   -webkit-backdrop-filter: blur(30px);
   border-radius: 20px;
   padding: 20px;
+  transition: all 2s ease-in-out;
 }
 
 .content {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .author {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .author::before {
@@ -32,10 +33,9 @@ body {
 
 .bottom-right {
   position: absolute;
-  top: 0%;
   right: 0%;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 button {
@@ -56,21 +56,20 @@ button {
   }
 
   .content {
-    font-size: 35px;
+    font-size: 24px;
   }
 
   .author {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   button {
-    font-size: 22px;
+    font-size: 18px;
     padding: 30px;
   }
 
   button:hover {
     background-color: rgba(255, 255, 255, 0.5);
-
     color: midnightblue;
   }
 }
