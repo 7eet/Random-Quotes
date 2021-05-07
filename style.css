@@ -1,6 +1,6 @@
 body {
   background-image: url("./unsplash.jpg");
-  background-position: top;
+  background-position: center;
   color: midnightblue;
 }
 
@@ -33,10 +33,10 @@ body {
 
 .bottom-right {
   position: absolute;
-  bottom: 0%;
+  top: 0%;
   right: 0%;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 button {
@@ -46,11 +46,6 @@ button {
   border: none;
   background-color: #f9fafb;
   color: #191919;
-}
-
-button:hover {
-  background-color: #3b82f6;
-  color: #f9fafb;
 }
 
 @media (min-width: 720px) {
@@ -72,5 +67,10 @@ button:hover {
   button {
     font-size: 22px;
     padding: 30px;
+  }
+
+  button:hover {
+    background-color: #3b82f6;
+    color: #f9fafb;
   }
 }
