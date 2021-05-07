@@ -1,15 +1,16 @@
 body {
   background-image: url("./unsplash.jpg");
-  background-position: center;
-  color: #f9fafb;
-  /*  #191919 */
+  background-position: top;
+  color: midnightblue;
 }
 
 .card {
   margin: 0px 10px;
-  position: relative;
+  position: absolute;
   top: 30%;
   backdrop-filter: blur(50px);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(50px);
   border-radius: 20px;
   padding: 20px;
 }
@@ -56,6 +57,7 @@ button:hover {
   .card {
     width: 70vw;
     left: 10%;
+    top: 25%;
     padding: 40px;
   }
 
@@ -67,22 +69,8 @@ button:hover {
     font-size: 22px;
   }
 
-  .bottom-right {
-    margin-right: 60px;
-    margin-bottom: 60px;
-  }
-
   button {
     font-size: 22px;
     padding: 30px;
-  }
-}
-
-@keyframes spinIt {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }

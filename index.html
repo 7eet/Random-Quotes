@@ -1,27 +1,29 @@
+<!doctype html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="./style.css" />
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random Quotes</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Random Quotes</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
 
-  <div class="card">
-    <div class="card-body">
-      <h5 class="content"></h5>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="content"></h5>
+      </div>
+      
+      <div class="card-footer">
+        <small class="author"></small>
+      </div>
+    </div>
+  
+    <div class="bottom-right">
+      <button onclick="getData()" class="btn">New Quote</button>
     </div>
     
-    <div class="card-footer">
-      <small class="author"></small>
-    </div>
-  </div>
-
-  <div class="bottom-right">
-    <button onclick="getData()" class="btn">New Quote</button>
-  </div>
-  
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+    
+  </body>
 </html>
